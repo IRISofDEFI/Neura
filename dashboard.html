@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NeuraDex</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <div class="logo-text">
+                        <h1>NeuraDex</h1>
+                        <p>AI Trading Platform</p>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h2>Dashboard</h2>
+                    <p>Somnia Blockchain</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-testnet">Testnet</button>
+                    <button class="btn-connect">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="#" class="nav-item active">
+                            <span class="nav-icon">📊</span>
+                            Dashboard
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">📈</span>
+                            AI Strategies
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">🎮</span>
+                            Demo Trading
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">💼</span>
+                            Portfolio
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">🏆</span>
+                            Leaderboard
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">⚙️</span>
+                            Settings
+                        </a>
+                    </nav>
+                    <div class="ai-assistant">
+                        <p>Your AI Assistant is ready to help</p>
+                        <button class="btn-chat">💬 Chat Now</button>
+                    </div>
+                </aside>
+
+                <!-- Markets Section -->
+                <section class="markets-section">
+                    <div class="section-header">
+                        <h3>Markets</h3>
+                        <p>AI-powered trading on Somnia Blockchain</p>
+                    </div>
+                    <div class="markets-grid">
+                        <!-- DeFi -->
+                        <div class="market-card defi">
+                            <div class="card-header">
+                                <div class="card-icon orange">🔥</div>
+                                <h4>DeFi</h4>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">🔴</span>
+                                <span>DOT</span>
+                                <div class="price">$0.0261</div>
+                                <div class="change positive">+3.46%</div>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">🔵</span>
+                                <span>CAI</span>
+                                <div class="price">$0.0364</div>
+                                <div class="change positive">+2.64%</div>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">🟠</span>
+                                <span>SOTO</span>
+                                <div class="price">$0.64100</div>
+                                <div class="change positive">+28.00%</div>
+                            </div>
+                        </div>
+
+                        <!-- Top Gainers -->
+                        <div class="market-card top-gainers">
+                            <div class="card-header">
+                                <div class="card-icon blue">📈</div>
+                                <h4>Top Gainers</h4>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">🔷</span>
+                                <span>CAI</span>
+                                <div class="price">$0.0261</div>
+                                <div class="change positive">+3.46%</div>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">⚡</span>
+                                <span>SPEC</span>
+                                <div class="price">$0.0364</div>
+                                <div class="change positive">+2.64%</div>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">🟠</span>
+                                <span>COI</span>
+                                <div class="price">$0.64100</div>
+                                <div class="change positive">+28.00%</div>
+                            </div>
+                        </div>
+
+                        <!-- New Listings -->
+                        <div class="market-card new-listings">
+                            <div class="card-header">
+                                <div class="card-icon green">⭐</div>
+                                <h4>New Listings</h4>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">⭕</span>
+                                <span>COIN</span>
+                                <div class="price">$0.0261</div>
+                                <div class="change positive">+3.46%</div>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">🔴</span>
+                                <span>TSONET</span>
+                                <div class="price">$0.0364</div>
+                                <div class="change positive">+2.64%</div>
+                            </div>
+                            <div class="market-item">
+                                <span class="token-icon">🟣</span>
+                                <span>SYRUP</span>
+                                <div class="price">$0.64100</div>
+                                <div class="change positive">+28.00%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="filters">
+                        <button class="filter-btn active">Favorites</button>
+                        <button class="filter-btn">All</button>
+                        <button class="filter-btn">Futures</button>
+                        <button class="filter-btn">Spot</button>
+                        <button class="filter-btn">Margin</button>
+                        <button class="filter-btn">New Listings</button>
+                        <input type="text" class="search-input" placeholder="Search">
+                    </div>
+
+                    <!-- Trading Table -->
+                    <div class="trading-table">
+                        <div class="table-header">
+                            <span>#</span>
+                            <span>Trading Pairs Name</span>
+                            <span>Last Price</span>
+                            <span>24h Turnover</span>
+                            <span>24h Volume</span>
+                            <span>24h Change</span>
+                            <span>Chart</span>
+                            <span>Actions</span>
+                        </div>
+                        <div class="table-row">
+                            <span>1</span>
+                            <div class="pair">
+                                <span class="token-icon purple">⭕</span>
+                                USDT
+                            </div>
+                            <div class="price">$1.00</div>
+                            <div>$218.53M</div>
+                            <div>$72.20M</div>
+                            <div class="change positive">+0.22%</div>
+                            <div class="chart green"></div>
+                            <div class="actions">⋮</div>
+                        </div>
+                        <div class="table-row">
+                            <span>2</span>
+                            <div class="pair">
+                                <span class="token-icon orange">₿</span>
+                                BTC/USDT
+                            </div>
+                            <div class="price">$26,755.9</div>
+                            <div>$2,321.42M</div>
+                            <div>$2,478.70M</div>
+                            <div class="change negative">-5.12%</div>
+                            <div class="chart red"></div>
+                            <div class="actions">⋮</div>
+                        </div>
+                        <div class="table-row">
+                            <span>3</span>
+                            <div class="pair">
+                                <span class="token-icon green">S</span>
+                                SUSHI/USDT
+                            </div>
+                            <div class="price">$0.88</div>
+                            <div>$805.63M</div>
+                            <div>$236.62M</div>
+                            <div class="change positive">+3.60%</div>
+                            <div class="chart green"></div>
+                            <div class="actions">⋮</div>
+                        </div>
+                        <div class="table-row">
+                            <span>4</span>
+                            <div class="pair">
+                                <span class="token-icon blue">B</span>
+                                BTSTAMP/USDT
+                            </div>
+                            <div class="price">$0.18</div>
+                            <div>$1,050.63M</div>
+                            <div>$236.62M</div>
+                            <div class="change positive">+0.80%</div>
+                            <div class="chart green"></div>
+                            <div class="actions">⋮</div>
+                        </div>
+                        <div class="table-row">
+                            <span>5</span>
+                            <div class="pair">
+                                <span class="token-icon purple">G</span>
+                                GEMINI/USDT
+                            </div>
+                            <div class="price">$0.91</div>
+                            <div>$1,450.56M</div>
+                            <div>$236.62M</div>
+                            <div class="change positive">+2.60%</div>
+                            <div class="chart green"></div>
+                            <div class="actions">⋮</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button class="btn-quick-trade">⚡ Quick Trade</button>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
