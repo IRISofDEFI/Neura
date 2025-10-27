@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Trading - NeuraDex</title>
+    <link rel="stylesheet" href="demo-trading.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <div class="logo-text">
+                        <h1>NeuraDex</h1>
+                        <p>AI Trading Platform</p>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h2>Demo Trading</h2>
+                    <p>Somnia Blockchain</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-testnet">Testnet</button>
+                    <button class="btn-connect">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="demo-trading-page">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="dashboard.html" class="nav-item">
+                            <span class="nav-icon">📊</span>
+                            Dashboard
+                        </a>
+                        <a href="ai-strategies.html" class="nav-item">
+                            <span class="nav-icon">🧠</span>
+                            AI Strategies
+                        </a>
+                        <a href="demo-trading.html" class="nav-item active">
+                            <span class="nav-icon">🎮</span>
+                            Demo Trading
+                        </a>
+                        <a href="portfolio.html" class="nav-item">
+                            <span class="nav-icon">💼</span>
+                            Portfolio
+                        </a>
+                        <a href="leaderboard.html" class="nav-item">
+                            <span class="nav-icon">🏆</span>
+                            Leaderboard
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">⚙️</span>
+                            Settings
+                        </a>
+                    </nav>
+                    <div class="ai-assistant">
+                        <p>Your AI Assistant is ready to help</p>
+                        <button class="btn-chat">💬 Chat Now</button>
+                    </div>
+                </aside>
+
+                <!-- Demo Trading Section -->
+                <section class="demo-trading-section">
+                    <!-- Trading Header -->
+                    <div class="trading-header">
+                        <h3>SOMI/STT Price Chart</h3>
+                        <div class="trading-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Price</span>
+                                <span class="stat-value">$0.0364</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">24h Change</span>
+                                <span class="stat-value positive">+2.64%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Volume</span>
+                                <span class="stat-value">$1.2M</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chart Placeholder -->
+                    <div class="chart-container">
+                        <canvas id="priceChart"></canvas>
+                    </div>
+
+                    <!-- Trading Controls -->
+                    <div class="trading-controls">
+                        <div class="control-group">
+                            <label>Amount</label>
+                            <input type="number" placeholder="0.00" class="input-amount">
+                        </div>
+                        <div class="control-group">
+                            <label>Strategy</label>
+                            <select class="input-strategy">
+                                <option value="market">Market Momentum</option>
+                                <option value="aggressive">Aggressive Day Trader</option>
+                                <option value="conservative">Conservative Swing</option>
+                            </select>
+                        </div>
+                        <button class="btn-buy">Buy SOMI</button>
+                        <button class="btn-sell">Sell STT</button>
+                    </div>
+
+                    <!-- Trade History -->
+                    <div class="trade-history">
+                        <h4>Recent Trades</h4>
+                        <div class="history-table">
+                            <div class="history-row">
+                                <span>Buy SOMI</span>
+                                <span>$0.0364</span>
+                                <span>0.5 STT</span>
+                                <span class="positive">+1.2%</span>
+                                <span>2m ago</span>
+                            </div>
+                            <div class="history-row">
+                                <span>Sell STT</span>
+                                <span>$0.0358</span>
+                                <span>0.3 SOMI</span>
+                                <span class="negative">-0.5%</span>
+                                <span>5m ago</span>
+                            </div>
+                            <div class="history-row">
+                                <span>Buy SOMI</span>
+                                <span>$0.0360</span>
+                                <span>0.7 STT</span>
+                                <span class="positive">+0.9%</span>
+                                <span>10m ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="demo-trading.js"></script>
+</body>
+</html>

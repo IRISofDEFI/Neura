@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - NeuraDex</title>
+    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <div class="logo-text">
+                        <h1>NeuraDex</h1>
+                        <p>AI Trading Platform</p>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h2>Leaderboard</h2>
+                    <p>Somnia Blockchain</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-testnet">Testnet</button>
+                    <button class="btn-connect">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="leaderboard-page">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="dashboard.html" class="nav-item">
+                            <span class="nav-icon">📊</span>
+                            Dashboard
+                        </a>
+                        <a href="ai-strategies.html" class="nav-item">
+                            <span class="nav-icon">🧠</span>
+                            AI Strategies
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">🎮</span>
+                            Demo Trading
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">💼</span>
+                            Portfolio
+                        </a>
+                        <a href="leaderboard.html" class="nav-item active">
+                            <span class="nav-icon">🏆</span>
+                            Leaderboard
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">⚙️</span>
+                            Settings
+                        </a>
+                    </nav>
+                    <div class="ai-assistant">
+                        <p>Your AI Assistant is ready to help</p>
+                        <button class="btn-chat">💬 Chat Now</button>
+                    </div>
+                </aside>
+
+                <!-- Leaderboard Section -->
+                <section class="leaderboard-section">
+                    <!-- Filters -->
+                    <div class="filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Demo</button>
+                        <button class="filter-btn">Real</button>
+                    </div>
+
+                    <!-- Top Strategies Header -->
+                    <div class="top-strategies-header">
+                        <h3>Top Strategies</h3>
+                        <div class="table-subheader">
+                            <span>Rank</span>
+                            <span>Strategy Name</span>
+                            <span>AI Model</span>
+                            <span>ROI</span>
+                            <span>Win Rate</span>
+                            <span>Trades</span>
+                            <span>Mode</span>
+                        </div>
+                    </div>
+
+                    <!-- Leaderboard Table -->
+                    <div class="leaderboard-table">
+                        <!-- Row 1: Aggressive Day Trader -->
+                        <div class="table-row">
+                            <div class="rank-icon gold">🥇</div>
+                            <div class="strategy-name">
+                                <span>Aggressive Day Trader</span>
+                                <span class="user-email">user@example.com</span>
+                            </div>
+                            <div class="ai-model purple">GPT-4</div>
+                            <div class="roi positive">+24.5%</div>
+                            <div class="win-rate">68.5%</div>
+                            <div class="trades">156</div>
+                            <div class="mode demo">Demo</div>
+                        </div>
+
+                        <!-- Row 2: Market Momentum -->
+                        <div class="table-row">
+                            <div class="rank-icon silver">🥈</div>
+                            <div class="strategy-name">
+                                <span>Market Momentum</span>
+                                <span class="user-email">user@example.com</span>
+                            </div>
+                            <div class="ai-model grok">Grok</div>
+                            <div class="roi positive">+18.7%</div>
+                            <div class="win-rate">74.1%</div>
+                            <div class="trades">89</div>
+                            <div class="mode demo">Demo</div>
+                        </div>
+
+                        <!-- Row 3: Conservative Swing -->
+                        <div class="table-row">
+                            <div class="rank-icon bronze">🥉</div>
+                            <div class="strategy-name">
+                                <span>Conservative Swing</span>
+                                <span class="user-email">user@example.com</span>
+                            </div>
+                            <div class="ai-model gemini">Gemini</div>
+                            <div class="roi positive">+12.3%</div>
+                            <div class="win-rate">82.7%</div>
+                            <div class="trades">45</div>
+                            <div class="mode demo">Demo</div>
+                        </div>
+
+                        <!-- Additional Row 4 -->
+                        <div class="table-row">
+                            <div class="rank-icon default">4</div>
+                            <div class="strategy-name">
+                                <span>Scalping Pro</span>
+                                <span class="user-email">trader@defi.com</span>
+                            </div>
+                            <div class="ai-model purple">GPT-4</div>
+                            <div class="roi positive">+22.1%</div>
+                            <div class="win-rate">71.2%</div>
+                            <div class="trades">203</div>
+                            <div class="mode real">Real</div>
+                        </div>
+
+                        <!-- Additional Row 5 -->
+                        <div class="table-row">
+                            <div class="rank-icon default">5</div>
+                            <div class="strategy-name">
+                                <span>Trend Follower</span>
+                                <span class="user-email">investor@somnia.io</span>
+                            </div>
+                            <div class="ai-model grok">Grok</div>
+                            <div class="roi positive">+16.8%</div>
+                            <div class="win-rate">79.4%</div>
+                            <div class="trades">112</div>
+                            <div class="mode demo">Demo</div>
+                        </div>
+
+                        <!-- Additional Row 6 -->
+                        <div class="table-row">
+                            <div class="rank-icon default">6</div>
+                            <div class="strategy-name">
+                                <span>Arbitrage Master</span>
+                                <span class="user-email">arbitrage@crypto.net</span>
+                            </div>
+                            <div class="ai-model gemini">Gemini</div>
+                            <div class="roi positive">+14.2%</div>
+                            <div class="win-rate">85.6%</div>
+                            <div class="trades">67</div>
+                            <div class="mode real">Real</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>

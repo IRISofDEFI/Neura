@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Portfolio - NeuraDex</title>
+    <link rel="stylesheet" href="demo-portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <div class="logo-text">
+                        <h1>NeuraDex</h1>
+                        <p>AI Trading Platform</p>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h2>Demo Portfolio</h2>
+                    <p>Somnia Blockchain</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-testnet">Testnet</button>
+                    <button class="btn-connect">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="portfolio-page">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="dashboard.html" class="nav-item">
+                            <span class="nav-icon">📊</span>
+                            Dashboard
+                        </a>
+                        <a href="ai-strategies.html" class="nav-item">
+                            <span class="nav-icon">🧠</span>
+                            AI Strategies
+                        </a>
+                        <a href="demo-trading.html" class="nav-item">
+                            <span class="nav-icon">🎮</span>
+                            Demo Trading
+                        </a>
+                        <a href="demo-portfolio.html" class="nav-item active">
+                            <span class="nav-icon">💼</span>
+                            Demo Portfolio
+                        </a>
+                        <a href="leaderboard.html" class="nav-item">
+                            <span class="nav-icon">🏆</span>
+                            Leaderboard
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="nav-icon">⚙️</span>
+                            Settings
+                        </a>
+                    </nav>
+                    <div class="ai-assistant">
+                        <p>Your AI Assistant is ready to help</p>
+                        <button class="btn-chat">💬 Chat Now</button>
+                    </div>
+                </aside>
+
+                <!-- Portfolio Section -->
+                <section class="portfolio-section">
+                    <!-- Portfolio Header -->
+                    <div class="portfolio-header">
+                        <h3>Demo Portfolio Overview</h3>
+                        <div class="portfolio-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Total Value</span>
+                                <span class="stat-value">$1,245.30</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">24h Change</span>
+                                <span class="stat-value positive">+3.12%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Assets</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chart Placeholder -->
+                    <div class="chart-container">
+                        <canvas id="demoPortfolioChart"></canvas>
+                    </div>
+
+                    <!-- Asset Controls -->
+                    <div class="asset-controls">
+                        <div class="control-group">
+                            <label>Filter</label>
+                            <select class="input-filter">
+                                <option value="all">All Assets</option>
+                                <option value="somi">SOMI</option>
+                                <option value="stt">STT</option>
+                                <option value="btc">BTC</option>
+                            </select>
+                        </div>
+                        <button class="btn-add-asset">+ Add Demo Asset</button>
+                    </div>
+
+                    <!-- Asset Holdings -->
+                    <div class="asset-holdings">
+                        <h4>Demo Asset Holdings</h4>
+                        <div class="holdings-table">
+                            <div class="holdings-row">
+                                <span>SOMI</span>
+                                <span>250.00</span>
+                                <span>$9.10</span>
+                                <span class="positive">+2.5%</span>
+                                <span>Demo</span>
+                            </div>
+                            <div class="holdings-row">
+                                <span>STT</span>
+                                <span>150.00</span>
+                                <span>$5.25</span>
+                                <span class="positive">+1.8%</span>
+                                <span>Demo</span>
+                            </div>
+                            <div class="holdings-row">
+                                <span>BTC</span>
+                                <span>0.015</span>
+                                <span>$950.00</span>
+                                <span class="negative">-0.9%</span>
+                                <span>Demo</span>
+                            </div>
+                            <div class="holdings-row">
+                                <span>ETH</span>
+                                <span>0.20</span>
+                                <span>$120.00</span>
+                                <span class="positive">+3.4%</span>
+                                <span>Demo</span>
+                            </div>
+                            <div class="holdings-row">
+                                <span>XRP</span>
+                                <span>500.00</span>
+                                <span>$0.36</span>
+                                <span class="positive">+1.1%</span>
+                                <span>Demo</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="demo-portfolio.js"></script>
+</body>
+</html>
