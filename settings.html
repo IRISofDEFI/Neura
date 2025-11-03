@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - NeuraDex</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <div class="logo-text">
+                        <h1>NeuraDex</h1>
+                        <p>AI Trading Platform</p>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h2>Settings</h2>
+                    <p>Somnia Blockchain</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-testnet">Testnet</button>
+                    <button class="btn-connect">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="settings-page">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="dashboard.html" class="nav-item">
+                            <span class="nav-icon">📊</span>
+                            Dashboard
+                        </a>
+                        <a href="ai-strategies.html" class="nav-item">
+                            <span class="nav-icon">🧠</span>
+                            AI Strategies
+                        </a>
+                        <a href="demo-trading.html" class="nav-item">
+                            <span class="nav-icon">🎮</span>
+                            Demo Trading
+                        </a>
+                        <a href="demo-portfolio.html" class="nav-item">
+                            <span class="nav-icon">💼</span>
+                            Demo Portfolio
+                        </a>
+                        <a href="real-portfolio.html" class="nav-item">
+                            <span class="nav-icon">💰</span>
+                            Real Portfolio
+                        </a>
+                        <a href="leaderboard.html" class="nav-item">
+                            <span class="nav-icon">🏆</span>
+                            Leaderboard
+                        </a>
+                        <a href="settings.html" class="nav-item active">
+                            <span class="nav-icon">⚙️</span>
+                            Settings
+                        </a>
+                    </nav>
+                    <div class="ai-assistant">
+                        <p>Your AI Assistant is ready to help</p>
+                        <button class="btn-chat">💬 Chat Now</button>
+                    </div>
+                </aside>
+
+                <!-- Settings Section -->
+                <section class="settings-section">
+                    <!-- Filters -->
+                    <div class="filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Account</button>
+                        <button class="filter-btn">Notifications</button>
+                        <button class="filter-btn">Security</button>
+                    </div>
+
+                    <!-- Top Settings Header -->
+                    <div class="top-settings-header">
+                        <h3>Settings Options</h3>
+                        <div class="table-subheader">
+                            <span>Category</span>
+                            <span>Setting</span>
+                            <span>Status</span>
+                            <span>Action</span>
+                        </div>
+                    </div>
+
+                    <!-- Settings Table -->
+                    <div class="settings-table">
+                        <!-- Row 1: Username -->
+                        <div class="table-row">
+                            <div class="category">Account</div>
+                            <div class="setting">Username</div>
+                            <div class="status">TraderX123</div>
+                            <div class="action">
+                                <button class="btn-edit">Edit</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Email -->
+                        <div class="table-row">
+                            <div class="category">Account</div>
+                            <div class="setting">Email</div>
+                            <div class="status">traderx@neuradex.com</div>
+                            <div class="action">
+                                <button class="btn-edit">Edit</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Password -->
+                        <div class="table-row">
+                            <div class="category">Account</div>
+                            <div class="setting">Password</div>
+                            <div class="status">********</div>
+                            <div class="action">
+                                <button class="btn-edit">Change</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 4: Theme -->
+                        <div class="table-row">
+                            <div class="category">Notifications</div>
+                            <div class="setting">Theme</div>
+                            <div class="status">Dark</div>
+                            <div class="action">
+                                <button class="btn-edit">Edit</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 5: Trade Updates -->
+                        <div class="table-row">
+                            <div class="category">Notifications</div>
+                            <div class="setting">Trade Updates</div>
+                            <div class="status">Enabled</div>
+                            <div class="action">
+                                <button class="btn-toggle">Toggle</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 6: Market Alerts -->
+                        <div class="table-row">
+                            <div class="category">Notifications</div>
+                            <div class="setting">Market Alerts</div>
+                            <div class="status">Disabled</div>
+                            <div class="action">
+                                <button class="btn-toggle">Toggle</button>
+                            </div>
+                        </div>
+
+                        <!-- Row 7: Two-Factor Auth -->
+                        <div class="table-row">
+                            <div class="category">Security</div>
+                            <div class="setting">Two-Factor Authentication</div>
+                            <div class="status">Disabled</div>
+                            <div class="action">
+                                <button class="btn-toggle">Enable</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Save Button -->
+                    <button class="btn-save">Save Changes</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="settings.js"></script>
+</body>
+</html>
